@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: Instala el paquete de Apache
+    package:
+      name: httpd
+      state: latest
+      
